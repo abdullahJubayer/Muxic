@@ -6,7 +6,8 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="blue_black">#0A0E21</color>
+    <color name="default_back">#0A0E21</color>
+    <color name="default_back_dark">#0A0E0F</color>
     <color name="white">#FFFFFFFF</color>
     <color name="splashBack">#0A0E21</color>
 </resources>
