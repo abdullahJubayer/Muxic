@@ -11,7 +11,7 @@ class AlbumFragmentViewModel(application: Application) : AndroidViewModel(applic
     private val allAlbum: MutableLiveData<ArrayList<String>> = MutableLiveData<ArrayList<String>>()
     private val errorMessage: MutableLiveData<String> = MutableLiveData<String>()
 
-    fun getAllAudioList(): MutableLiveData<ArrayList<String>> {
+    fun getAllAlbumList(): MutableLiveData<ArrayList<String>> {
         albumFragmentDataModel.getAllAlbum(object : ResultListener<ArrayList<String>> {
             override fun onSuccess(data: ArrayList<String>) {
                 allAlbum.value=data

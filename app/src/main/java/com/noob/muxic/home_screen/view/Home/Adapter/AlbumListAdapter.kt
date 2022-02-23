@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.noob.muxic.R
+import kotlinx.android.synthetic.main.item_design_album_list.view.*
 
 class AlbumListAdapter (private val albumList:ArrayList<String>) : RecyclerView.Adapter<AlbumListAdapter.AlbumViewHolder>() {
 
@@ -15,8 +16,8 @@ class AlbumListAdapter (private val albumList:ArrayList<String>) : RecyclerView.
     }
 
     override fun onBindViewHolder(holder: AlbumViewHolder, position: Int) {
-        holder.itemView.song_name.text = songList[position].name
-        holder.itemView.artist_name.text = songList[position].artist
+        holder.itemView.album_name.text = albumList[position]
+        //holder.itemView.album_total_song.text = songList[position].artist
     }
 
     override fun getItemCount(): Int {
